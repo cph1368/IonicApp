@@ -28,7 +28,7 @@ import { home,location,chatbox,person } from 'ionicons/icons';
     @ViewChild('tabs') tabs!: IonTabs;
   
     constructor() {
-      
+   
       addIcons({ home,location,chatbox,person });
     }
   
