@@ -13,7 +13,7 @@ import {
 } from '@ionic/angular/standalone';
 
 import { addIcons } from 'ionicons';
-import { library, playCircle, radio, search } from 'ionicons/icons';
+import { home,location,chatbox,person } from 'ionicons/icons';
 
 
 @Component({
@@ -28,12 +28,8 @@ import { library, playCircle, radio, search } from 'ionicons/icons';
     @ViewChild('tabs') tabs!: IonTabs;
   
     constructor() {
-      /**
-       * Any icons you want to use in your application
-       * can be registered in app.component.ts and then
-       * referenced by name anywhere in your application.
-       */
-      addIcons({ library, playCircle, radio, search });
+      
+      addIcons({ home,location,chatbox,person });
     }
   
     selectRadio() {
