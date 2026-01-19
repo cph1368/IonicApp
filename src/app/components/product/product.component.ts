@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
+import { Product } from 'src/app/interfaces/product.interface';
+import { Strings } from 'src/enums/strings.enum';
 
 @Component({
   selector: 'app-product',
@@ -7,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent  implements OnInit {
 
+  item = input<Product>();
+  currency = Strings.currency;
+  
   constructor() { }
 
   ngOnInit() {}
