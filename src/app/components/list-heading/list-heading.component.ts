@@ -11,7 +11,7 @@ export class ListHeadingComponent  implements OnInit {
 
       title = input<string>('');  
       heading = input<string>('');
-    buttonTitle = input<string>('see All');
+    buttonTitle = input<string>('See All');
   constructor() { }
 
   ngOnInit() {}

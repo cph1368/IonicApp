@@ -54,6 +54,9 @@
     
     <app-list-heading title="Categories"></app-list-heading>
     <app-categories [categories]="categories()"></app-categories>
-  
+
+    @if(products().length > 0) {
+      <app-list-heading title="Featured Products"></app-list-heading>
+    }
   </div>
 </ion-content>
