@@ -5,13 +5,14 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonLabel, IonButt
 import { addIcons } from 'ionicons';
 import { cart,chevronDownOutline, notificationsOutline, optionsOutline } from 'ionicons/icons';
 import { ListHeadingComponent } from 'src/app/components/list-heading/list-heading.component';
+import { BannerComponent } from "src/app/components/banner/banner.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [ ListHeadingComponent, IonHeader, IonToolbar, CommonModule, FormsModule, IonItem, IonLabel, IonButton, IonIcon, IonText, IonRow, IonCol, IonSearchbar]
+  imports: [ListHeadingComponent, IonHeader, IonToolbar, CommonModule, FormsModule, IonItem, IonLabel, IonButton, IonIcon, IonText, IonRow, IonCol, IonSearchbar, BannerComponent, IonContent]
 })
 export class HomePage implements OnInit {
 
