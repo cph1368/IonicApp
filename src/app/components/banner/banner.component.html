@@ -1,4 +1,4 @@
-@defer (when bannerImages?.length! > 0) {
+@defer (when bannerImages().length > 0) {
 <ion-row>
   <div class="banner-wrap">
     <swiper-container
@@ -10,7 +10,7 @@
       pagination-clickable="true"
       pagination-dynamic-bullets="true"
     >
-      @for (image of bannerImages; track $index) {
+      @for (image of bannerImages(); track $index) {
       <swiper-slide> <img [src]="image.banner" /> </swiper-slide> }
     </swiper-container>
   </div>
